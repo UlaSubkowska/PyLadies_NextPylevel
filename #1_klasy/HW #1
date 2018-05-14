@@ -1,0 +1,33 @@
+Zadanie 1.1
+
+Utwórz bazową klasę Czlowiek która będzie przechowywała następujące informacje o pojedynczym człowieku:
+imie
+wiek
+wzrost
+waga
+
+Dodatkowo klasa powinna zawierać w sobie następujące funkcje:
+przedstaw_sie - zwraca ciąg znaków w następującym formacie “Ja <imie>. Ja <wiek> lat.”
+pobierz_wiek - zwraca informację o wieku człowieka
+pobierz_waga - zwraca informację o wadze człowieka
+
+Utwórz dowolny obiekt typu Czlowiek i wypisz na ekran rezultat z wywołania trzech metod: przedstaw_sie, pobierz_wiek, pobierz_waga.
+
+Zadanie 1.2
+
+Utwórz dwie nowe klasy Mezczyzna i Kobieta które rozszerzą istniejącą klasę Czlowiek (dziedziczenie). Utwórz w kodzie 1 mężczyznę i 1 kobietę i wywołaj na nich metodę przedstaw_sie. Spraw, aby komunikaty różniły się w zależności od płci:
+
+Kobieta przedstawia się w następujący sposób: “Heja! Na imię mam <imie> i mam <wiek> lat”
+Mężczyzna przedstawia się w następujący sposób: “Cześć, jestem <imie>. Mam <wiek> lat”
+
+Zadanie 1.3
+
+Na utworzonych obiektach z zadania poprzedniego wywołaj dodatkowe metody: pobierz_wiek, pobierz_waga.
+
+Dokonaj modyfikacji polegającej na tym, że mężczyźni nie są do końca szczerzy w kwestii swojego wieku oraz wagi. Oto wytyczne w jaki sposób mężczyzna zwraca swój wiek i wagę:
+
+Wiek:
+Przed 10 rokiem życia, zwracany jest prawdziwy wiek
+Od 10 do 18 roku życia mężczyzna dodaje sobie 3 lata do prawdziwego wieku
+Od 19 do 30 roku życia mężczyzna dodaje sobie 2 lata do prawdziwego wieku
+Od 31 do 50 roku życia mężczyzna odejmuje sobie 3 lata od prawdziwego wieku

@@ -1,0 +1,28 @@
+Stwórz klasę Printer która spełnia następujące wymagania:
+-pole ink_level przechowuje informację o poziomie napełnienia tuszu (od 0.0 do 1.0),
+-poziom napełnienia tuszu ustawiany jest podczas tworzenia nowej drukarki,
+-metoda print, która przyjmuje ciąg znaków i na jego podstawie wyświetla komunikat "wydrukowano X stron".
+Po każdej wydrukowanej stronie poziom tuszu zmniejsza się o 0.07,
+-metoda calc_pages, która na podstawie ilości znaków zwraca informację o tym, ile stron potrzeba do druku
+(każde rozpoczęte 100 znaków to 1 strona)
+
+METODY STATYCZNE:
+Poniżej deklaracji klasy utwórz dwie drukarki:
+-printer_1 - początkowy poziom napełnienia tuszu to 0.3 drukarka drukuje 310 znaków,
+- printer_2 - początkowy poziom napełnienia tuszu to 0.8 drukarka drukuje 10 000 znaków.
+
+METODY KLASOWE:
+Stwórz klasę ColorPrinter, która rozszerzy klasę Printer i dokonaj następujących modyfikacji:
+-ColorPrinter zużywa wyłącznie 0.05 tuszu na każde 100 znaków,
+-dodaj metodę get_type, która w zależności od typu drukarki wyświetli stosowy komunikat:
+'My printer is Printer' lub 'My printer is ColourPrinter',
+-zmień typ obiektu printer_2 na ColourPrinter
+-wywołaj metodę get_type na obu drukarkach.
+
+METODY MAGICZNE:
+Stwórz klasę MagicPrinter, która rozszerzy klasę Printer i dokonaj najstępujących modyfikacji:
+-MagicPrinter po wydrukowaniu każdej strony zwiększa swój poziom tuszu o 0.01,
+-wywołanie obiektu resetuje jego poziom tuszu do zera,
+-wywołanie polecenia str(printer) wyświetli komunikat 'My type is MagicPrinter',
+-spraw aby porównanie dwóch różnych typów obiektów typu MagicPrinter zwracało wynik pozytywny (ale tylko jeśli oba obiekty są "magiczne"),
+-utwórz obiekt printer_3, printer_4 typu MagicPrinter.
