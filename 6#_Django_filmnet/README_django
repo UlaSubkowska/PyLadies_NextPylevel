@@ -1,0 +1,6 @@
+Filmnet to aplikacja webowa stworzona w oparciu o framework Django.
+Wymagania:
+Python 3.x + Django 2.x
+
+Aplikację można uruchomić lokalnie przy użyciu polecenia 'python manage.py runserver',
+z poziomu katalogu filmnet.
